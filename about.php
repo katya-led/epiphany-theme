@@ -1,9 +1,9 @@
 <?php
-/* Template Name: Single Page */
+/* Template Name: About Page */
 
 get_header(); ?>
 
-<p>Single page</p>
+<p>About page</p>
 
 <?php
 get_sidebar();

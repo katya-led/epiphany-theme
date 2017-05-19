@@ -1,28 +1,16 @@
-<?php
-/**
- * The template for displaying the footer
- *
- * Contains the closing of the #content div and all content after.
- *
- * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- *
- * @package epiphany
- */
-
-?>
-
-	</div><!-- #content -->
-
-	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'epiphany' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'epiphany' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'epiphany' ), 'epiphany', '<a href="https://automattic.com/" rel="designer">katya</a>' ); ?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
-
-<?php wp_footer(); ?>
-
+<footer class="page-footer">
+  <div class="page-footer__inner">
+    <p class="page-footer__text">&#169; 2016 Epiphany | All rights reserved | Design by <a class="page-footer__link" href="">Olga Zalite</a></p>
+    <div class="page-footer__socials">
+      <a class="page-footer__socials-link  page-footer__socials-link--tw" href="#"><svg class="icon" width="18" height="18"><use xlink:href="#menu-twitter"></use></svg></a>
+      <a class="page-footer__socials-link  page-footer__socials-link--fb" href="#"><svg class="icon" width="18" height="18"><use xlink:href="#menu-facebook"></use></svg></a>
+      <a class="page-footer__socials-link  page-footer__socials-link--pin" href="#"><svg class="icon" width="18" height="18"><use xlink:href="#menu-pinterest"></use></svg></a>
+      <a class="page-footer__socials-link  page-footer__socials-link--vimeo" href="#"><svg class="icon" width="18" height="18"><use xlink:href="#menu-vimeo"></use></svg></a>
+      <a class="page-footer__socials-link  page-footer__socials-link--inst" href="#"><svg class="icon" width="18" height="18"><use xlink:href="#menu-instagram"></use></svg></a>
+    </div>
+  </div>
+  <script src="<?php echo get_template_directory_uri(); ?>/assets/scripts/script.min.js"></script>
+</footer>
+ <?php wp_footer(); ?> 
 </body>
 </html>

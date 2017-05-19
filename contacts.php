@@ -1,9 +1,9 @@
 <?php
-/* Template Name: Single Page */
+/* Template Name: Contacts Page */
 
 get_header(); ?>
 
-<p>Single page</p>
+<p>Contacts page</p>
 
 <?php
 get_sidebar();
