@@ -1,23 +1,3 @@
-/*
-Theme Name: epiphany
-Theme URI: http://underscores.me/
-Author: katya
-Author URI: http://rromanini1@gmail.com
-Description: calm theme
-Version: 1.0.0
-License: GNU General Public License v2 or later
-License URI: LICENSE
-Text Domain: epiphany
-Tags:
-
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
-
-epiphany is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
-Underscores is distributed under the terms of the GNU GPL v2 or later.
-*/
-
-
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -572,8 +552,7 @@ svg path {
       flex-wrap: wrap;
 }
 .container {
-  min-width: 320px;
-  max-width: 1170px;
+  width: 1170px;
   margin: 0 auto;
 }
 .col-xs-1 {
@@ -884,8 +863,6 @@ svg path {
   color: #a2a2a2;
 }
 .page-header__inner {
-  min-width: 320px;
-  max-width: 1170px;
   padding-bottom: 10px;
   padding-top: 10px;
   width: 1170px;
@@ -998,15 +975,13 @@ svg path {
   padding: 61px 0 63px;
 }
 .logo__inner {
-  min-width: 320px;
-  max-width: 1170px;
+  width: 1170px;
   margin: 0 auto;
   width: 600px;
   text-align: center;
 }
 .content {
-  min-width: 320px;
-  max-width: 1170px;
+  width: 1170px;
   margin: 0 auto;
   display: -ms-flexbox;
   display: flex;

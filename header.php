@@ -15,11 +15,15 @@
 
   <title>Document</title>
 
-  <?php wp_head(); ?>
+  <?php wp_head(); 
+   
+  ?>
 
 </head>
 <body <?php body_class(); ?>>
-
+  <?php 
+    require_once("template-parts/svg-sprite.php");
+  ?>
 <header class="page-header">
   <div class="page-header__inner">
     <div class="main-nav">
