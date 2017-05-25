@@ -49,8 +49,6 @@
         <a class="aside__socials-link  aside__socials-link--in" href="#"><svg class="icon" width="30" height="30"><use xlink:href="#linkedin-grey"></use></svg></a>
 
         <a class="aside__socials-link  aside__socials-link--pin" href="#"><svg class="icon" width="30" height="30"><use xlink:href="#pinterest-grey"></use></svg></a>
-
-<!--         <a class="aside__socials-link  aside__socials-link--inst" href="#"><svg class="icon" width="30" height="30"><use xlink:href="#dribble-grey"></use></svg></a> -->
       </div>
     </div>
     <div class="aside__categories">
