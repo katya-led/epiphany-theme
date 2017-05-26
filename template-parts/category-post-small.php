@@ -3,10 +3,10 @@
   <div class="category__inner">
     <a href="#">
       <h1 class="category__title"><?php the_title(); ?></h1>
-      <p class="category__text"><?php the_content(); ?></p>
+      <p class="category__text"><?php echo get_the_content(); ?></p>
     </a>
     <footer class="category__footer">
-      <div class="category__date-day"><?php the_time('j f Y'); ?>, friday</div>
+      <div class="category__date-day"><?php the_time('j M Y, D'); ?></div>
       <div class="category__comments"><a href="#" class="category__comments-link">17 comments</a></div>
     </footer>
     <div class="category__tag-list">

@@ -1,7 +1,9 @@
 <?php
 /* Template Name: Category Page */
 
-get_header(); ?>
+get_header();
+require_once( dirname(__FILE__) . '/queries.php'); 
+?>
 <div class="content">
   <?php
 
@@ -30,7 +32,19 @@ get_header(); ?>
     </article>
     <div class="content-category">
       <!-- category-post-small.php -->
-      <?php get_template_part( "template-parts/category-post", "small" ); ?>
+
+      <?php 
+        if ( $category->have_posts() ) {
+          while ( $category->have_posts() ) {
+            $category->the_post(); 
+            get_template_part( "template-parts/category-post", "small" ); 
+            //
+            // Post Content here
+            //
+          } // end while
+        } // end if
+      ?>
+
     </div>
     <div class="blog-nav">
       <div class="blog-nav__link-wrapper"><a class="blog-nav__link" href="#"><< newer posts</a></div>
