@@ -1,9 +1,23 @@
 <article class="category">
-  <div class="category__img-wrapper"><a href="#" class="category__img-link"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/arch-image-5.jpg" alt="photo" class="category__img"></a></div>
+  <div class="category__img-wrapper"><a href="#" class="category__img-link">
+          <?php 
+            the_post_thumbnail("small");
+          ?>
+            
+          </a></div>
   <div class="category__inner">
-    <a href="#">
+    <a href="<?php the_permalink(); ?>">
       <h1 class="category__title"><?php the_title(); ?></h1>
-      <p class="category__text"><?php echo get_the_content(); ?></p>
+
+      <p class="category__text"><?php 
+      if (is_single()) {
+        echo "123";
+
+      }
+      else {
+        echo "456";
+      }
+      echo get_the_content(); ?></p>
     </a>
     <footer class="category__footer">
       <div class="category__date-day"><?php the_time('j M Y, D'); ?></div>

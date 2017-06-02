@@ -2,7 +2,6 @@
 /* Template Name: Category Page */
 
 get_header();
-require_once( dirname(__FILE__) . '/queries.php'); 
 ?>
 <div class="content">
   <?php
@@ -34,15 +33,19 @@ require_once( dirname(__FILE__) . '/queries.php');
       <!-- category-post-small.php -->
 
       <?php 
-        if ( $category->have_posts() ) {
-          while ( $category->have_posts() ) {
-            $category->the_post(); 
+        $query = new WP_Query( array ( 'post_type' => 'post', 'order' => 'date', 'posts_per_page' => 8) );
+
+        if ( $query->have_posts() ) {
+          while ( $query->have_posts() ) {
+            $query->the_post(); 
             get_template_part( "template-parts/category-post", "small" ); 
             //
             // Post Content here
             //
           } // end while
         } // end if
+
+        wp_reset_query();
       ?>
 
     </div>
