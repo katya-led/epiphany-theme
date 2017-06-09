@@ -6,7 +6,7 @@
   </div>
   <div class="single-post__inner">
     <h1 class="single-post__title"><?php echo get_the_title(); ?></h1>
-    <p class="single-post__text">
+    <div class="single-post__text">
 
       <?php 
       if (is_single()) {
@@ -18,13 +18,12 @@
       }
       ?>
 
-    </p>
+    </div>
     <footer class="single-post__footer">
       <div class="single-post__date-day">14.05.2016, thursday</div>
       <div class="single-post__socials">
-        <div class="single-post__socials-text">share:</div>
+        <p class="single-post__socials-text">share:</p>
         <div class="single-post__socials-wrapper">
-        
           <a class="single-post__socials-link  single-post__socials-link--tw" href="#"><svg class="icon" width="18" height="18"><use xlink:href="#menu-twitter"></use></svg></a>
 
           <a class="single-post__socials-link  single-post__socials-link--fb" href="#"><svg class="icon" width="18" height="18"><use xlink:href="#menu-facebook"></use></svg></a>
