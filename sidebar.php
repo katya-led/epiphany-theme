@@ -53,16 +53,13 @@
     </div>
     <div class="aside__categories">
       <h1 class="aside__title">categories</h1>
-      <div class="aside__categories-link-wrapper">
-        <div class="aside__categories-img-wrap"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/categories-interior.jpg" class="aside__categories-img" alt="photo"><a href="interior.html" class="aside__categories-link  aside__categories-link--category">interior</a></div>
-
-        <div class="aside__categories-img-wrap"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/categories-architecture.jpg" class="aside__categories-img" alt="photo"><a href="arch.html" class="aside__categories-link  aside__categories-link--arch">architecture</a></div>
-
-        <div class="aside__categories-img-wrap"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/categories-travel.jpg" class="aside__categories-img" alt="photo"><a href="travel.html" class="aside__categories-link  aside__categories-link--arch">travel</a></div>
-
-        <div class="aside__categories-img-wrap"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/categories-food.jpg" class="aside__categories-img" alt="photo"><a href="food.html" class="aside__categories-link  aside__categories-link--arch">food</a></div>
+      <ul class="aside__categories-link-wrapper">
+<!--         <li class="aside__categories-img-wrap"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/categories-interior.jpg" class="aside__categories-img" alt="photo"><a href="interior.html" class="aside__categories-link  aside__categories-link--category">interior</a></li> -->
+        <?php
+        wp_list_categories(['hide_empty' => 0]);
+        ?>
         
-      </div>
+      </ul>
     </div>
     <div class="aside__trend">
       <h1 class="aside__title">trending</h1>

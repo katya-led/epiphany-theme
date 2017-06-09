@@ -13,13 +13,13 @@
 
         <?php 
         if (is_single()) {
-          echo "123";
+          echo get_the_content();
 
         }
         else {
-          echo "456";
+          echo get_the_excerpt();
         }
-        echo get_the_content(); ?>
+         ?>
         
       </p>
     </a>

@@ -30,13 +30,13 @@
       <nav id="menudown" class="main-nav__nav">
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--active"><a class="main-nav__link" href="#">Home</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="index.html">Pages</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="interior.html">Interior</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="arch.html">Architecture</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="travel.html">Travel</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="food.html">Food</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="about.html">About me</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="contacts.html">Contact</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="/epiphany">Pages</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="/epiphany/category/interior">Interior</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="/epiphany/category/architecture">Architecture</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="/epiphany/category/travel">Travel</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="/epiphany/category/food">Food</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="/epiphany/about">About me</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="/epiphany/contacts">Contact</a></li>
         </ul>
       </nav>
     </div>

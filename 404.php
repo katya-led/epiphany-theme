@@ -21,9 +21,9 @@ get_header(); ?>
 					<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'epiphany' ); ?></p>
 
 					<?php
-						get_search_form();
+						get_search_form();//в aside
 
-						the_widget( 'WP_Widget_Recent_Posts' );
+						the_widget( 'WP_Widget_Recent_Posts' );//последние посты category php отдельный шаблон со списком и изменить запрос
 
 						// Only show the widget if site has multiple categories.
 						if ( epiphany_categorized_blog() ) :
