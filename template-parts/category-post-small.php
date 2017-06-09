@@ -6,18 +6,22 @@
             
           </a></div>
   <div class="category__inner">
-    <a href="<?php the_permalink(); ?>">
+    <a href="<?php the_permalink(); ?>" class="category__img-link">
       <h1 class="category__title"><?php the_title(); ?></h1>
 
-      <p class="category__text"><?php 
-      if (is_single()) {
-        echo "123";
+      <p class="category__text">
 
-      }
-      else {
-        echo "456";
-      }
-      echo get_the_content(); ?></p>
+        <?php 
+        if (is_single()) {
+          echo "123";
+
+        }
+        else {
+          echo "456";
+        }
+        echo get_the_content(); ?>
+        
+      </p>
     </a>
     <footer class="category__footer">
       <div class="category__date-day"><?php the_time('j M Y, D'); ?></div>

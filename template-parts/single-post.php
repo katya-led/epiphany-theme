@@ -20,7 +20,7 @@
 
     </p>
     <footer class="single-post__footer">
-      <div class="single-post__date-day">14.05.2016, thursday</div>
+      <div class="single-post__date-day"><?php the_time('j M Y, D'); ?></div>
       <div class="single-post__socials">
         <div class="single-post__socials-text">share:</div>
         <div class="single-post__socials-wrapper">

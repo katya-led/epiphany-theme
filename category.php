@@ -30,7 +30,7 @@ get_header();
       </div>
     </article>
     <div class="content-category">
-      <!-- category-post-small.php -->
+<!-- category-post-small.php -->
 
       <?php 
         $query = new WP_Query( array ( 'post_type' => 'post', 'order' => 'date', 'posts_per_page' => 8) );

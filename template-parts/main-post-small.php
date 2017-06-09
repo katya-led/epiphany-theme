@@ -1,9 +1,21 @@
 <article class="post">
   <div class="post__img-wrapper"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/list-post-5.jpg" alt="photo" class="post__img"></div>
   <div class="post__inner">
-    <a href="#" class="post__link">
+    <a href="<?php the_permalink(); ?>" class="post__link">
       <h1 class="post__title"><?php the_title(); ?></h1>
-      <p class="post__text"><?php echo get_the_content(); ?></p>
+      <p class="post__text">
+      
+      <?php 
+        if (is_single()) {
+          echo "123";
+
+        }
+        else {
+          echo "456";
+        }
+        echo get_the_content(); ?>
+          
+        </p>
     </a>
     <footer class="post__footer">
       <div class="post__date-day"><?php the_time('j M Y, D'); ?></div>

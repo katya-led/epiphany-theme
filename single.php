@@ -3,10 +3,13 @@
 
 get_header(); ?>
 <div class="content">
+
     <?php
 
     get_sidebar(); ?>
+
     <div class="content-main">
+<!-- single-post.php -->
 
       <?php 
 
